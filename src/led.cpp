@@ -28,7 +28,7 @@ void Led::loop() {
   if (this->blink_loop >= 2*blinks)    // accept equal, since with one blink we have long-short, long-short
 	this->blink_loop = 0;
 
-  digitalWrite(pin, (this->blinks & 0x01));
+  digitalWrite(pin, this->blinks & 0x01);
 }
 
 void Led::set_status(int blinks) {
