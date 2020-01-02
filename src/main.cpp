@@ -2,7 +2,7 @@
 
 #include "led.h"
 
-Led LED;
+Led LED; // NOLINT(cert-err58-cpp)
 
 // the setup function runs once when you press reset or power the board
 void setup() {
@@ -14,4 +14,3 @@ void setup() {
 void loop() {
   LED.loop();
 }
-
